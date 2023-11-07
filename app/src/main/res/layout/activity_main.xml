@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<TextView
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:text="Employee Management System"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:textSize="20dp"
+    android:layout_height="40dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/id"/>
+        <EditText
+            android:layout_marginStart="50dp"
+            android:id="@+id/idIn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="textPersonName"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user"/>
+        <EditText
+            android:layout_marginStart="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/nameIn"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/phone"/>
+
+        <EditText
+            android:layout_marginStart="50dp"
+            android:id="@+id/phoneID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Contact"
+            android:inputType="number"
+            tools:ignore="Autofill" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/age"/>
+
+        <EditText
+            android:id="@+id/ageID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number"
+            android:layout_marginStart="50dp"
+            tools:ignore="Autofill" />
+
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:backgroundTint="#F33777"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addBtn"
+            android:text="ADD" />
+
+        <Button
+            android:backgroundTint="#F33777"
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:text="display" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_marginStart="10dp"
+        android:id="@+id/listView"
+        android:layout_width="404dp"
+        android:layout_height="350dp"
+        />
+
+</LinearLayout>
